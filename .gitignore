@@ -1,0 +1,30 @@
+# Local planning & scratch notes
+site_improvement_plan.md
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Editor directories & swap files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment & dependencies
+.env
+.env.*
+node_modules/
+*.log
+
+# Archives
+*.zip
+*.tar.gz
+*.rar

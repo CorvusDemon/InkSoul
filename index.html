@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INK SOUL — Studio tatuażu</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- ========== NAWIGACJA ========== -->
+    <nav class="navbar" id="navbar" aria-label="Primary navigation">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-pen-nib" aria-hidden="true"></i>
+                <span>INK <strong>SOUL</strong></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" data-i18n="nav_home">Strona główna</a></li>
+                <li><a href="#about" data-i18n="nav_about">O nas</a></li>
+                <li><a href="#services" data-i18n="nav_services">Usługi</a></li>
+                <li><a href="#gallery" data-i18n="nav_gallery">Galeria</a></li>
+                <li><a href="#artists" data-i18n="nav_artists">Mistrzowie</a></li>
+                <li><a href="#reviews" data-i18n="nav_reviews">Opinie</a></li>
+                <li><a href="#faq" data-i18n="nav_faq">FAQ</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">Kontakt</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <!-- Przełącznik języka -->
+                <div class="lang-switch" id="langSwitch" role="group" aria-label="Language">
+                    <button type="button" class="lang-btn active" data-lang="pl" aria-pressed="true">PL</button>
+                    <span class="lang-divider" aria-hidden="true">/</span>
+                    <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+                </div>
+
+                <button type="button" class="burger" id="burger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content" tabindex="-1">
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-badge" data-i18n="hero_badge">TATTOO STUDIO</div>
+            <h1 data-i18n="hero_title">SZTUKA,<br>KTÓRA POZOSTAJE<br>Z TOBĄ <span class="accent">NA ZAWSZE</span></h1>
+            <p class="hero-subtitle" data-i18n="hero_subtitle">Styl. Doświadczenie. Emocje.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary" data-i18n="hero_btn_book">Zapisać się</a>
+                <a href="#gallery" class="btn btn-outline" data-i18n="hero_btn_gallery">Zobacz prace</a>
+            </div>
+            <div class="hero-contacts">
+                <span><i class="fas fa-globe"></i> www.inksoul.pl</span>
+                <span><i class="fas fa-phone"></i> +48 486-951-248</span>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- ========== O NAS ========== -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-number">02</div>
+            <h2 class="section-title"><span data-i18n="about_title_1">O</span> <span class="accent" data-i18n="about_title_2">NAS</span></h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="lead" data-i18n="about_lead">
+                        <strong>INK SOUL</strong> — studio tatuażu we Wrocławiu. Od ponad <strong>10 lat</strong> tworzymy autorskie projekty na skórze, łącząc precyzję, sztukę i sterylność.
+                    </p>
+                    <div class="about-features">
+                        <div class="about-feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="about_f1">Indywidualny projekt dla każdego klienta</span>
+                        </div>
+                        <div class="about-feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="about_f2">Medyczny standard sterylności i bezpieczeństwa</span>
+                        </div>
+                        <div class="about-feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="about_f3">Wszystkie style: realizm, grafika, blackwork i inne</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/logo.png" alt="INK SOUL Logo" class="brand-logo-img">
+                </div>
+            </div>
+            <!-- Statystyki -->
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fas fa-calendar-alt"></i></div>
+                    <div class="stat-number" data-target="10">0</div>
+                    <div class="stat-plus">+</div>
+                    <div class="stat-label" data-i18n="stat_exp">LAT DOŚWIADCZENIA</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fas fa-users"></i></div>
+                    <div class="stat-number" data-target="2000">0</div>
+                    <div class="stat-plus">+</div>
+                    <div class="stat-label" data-i18n="stat_clients">ZADOWOLONYCH KLIENTÓW</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+                    <div class="stat-number" data-target="15">0</div>
+                    <div class="stat-plus">+</div>
+                    <div class="stat-label" data-i18n="stat_awards">NAGRÓD I PUBLIKACJI</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fas fa-shield-alt"></i></div>
+                    <div class="stat-number" data-target="100">0</div>
+                    <div class="stat-plus">%</div>
+                    <div class="stat-label" data-i18n="stat_sterility">STERYLNOŚĆ</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== USŁUGI ========== -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-number">03</div>
+            <h2 class="section-title"><span data-i18n="services_title_1">NASZE</span> <span class="accent" data-i18n="services_title_2">USŁUGI</span></h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 data-i18n="service_1_title">Autorskie szkice</h3>
+                    <p data-i18n="service_1_desc">Opracowujemy unikalny projekt dostosowany do Państwa życzeń, uwzględniając anatomię i styl.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-pen-fancy"></i>
+                    </div>
+                    <h3 data-i18n="service_2_title">Tatuaże o dowolnym stopniu trudności</h3>
+                    <p data-i18n="service_2_desc">Wykonujemy tatuaże we wszystkich popularnych stylach — od mikro-tatuaży po rozbudowane projekty na całe ciało.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3 data-i18n="service_3_title">Cover-Up / Zakrycie</h3>
+                    <p data-i18n="service_3_desc">Przekształcamy stare lub nieudane tatuaże w nowe arcydzieła.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3 data-i18n="service_4_title">Piercing</h3>
+                    <p data-i18n="service_4_desc">Bezpieczny piercing przy użyciu wysokiej jakości biżuterii i sterylnych narzędzi.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hand-holding-medical"></i>
+                    </div>
+                    <h3 data-i18n="service_5_title">Pielęgnacja i porady</h3>
+                    <p data-i18n="service_5_desc">Towarzyszymy klientowi aż do całkowitego wyleczenia i udzielamy wskazówek dotyczących pielęgnacji.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <h3 data-i18n="service_6_title">Korekcja tatuażu</h3>
+                    <p data-i18n="service_6_desc">Odświeżamy kolory, kontury i detale istniejących tatuaży.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== GALERIA ========== -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-number">04</div>
+            <h2 class="section-title"><span data-i18n="gallery_title_1">NASZE</span> <span class="accent" data-i18n="gallery_title_2">REALIZACJE</span></h2>
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all" data-i18n="filter_all">Wszystko</button>
+                <button class="filter-btn" data-filter="realism" data-i18n="filter_realism">Realizm</button>
+                <button class="filter-btn" data-filter="graphic" data-i18n="filter_graphic">Grafika</button>
+                <button class="filter-btn" data-filter="minimal" data-i18n="filter_minimal">Minimalizm</button>
+                <button class="filter-btn" data-filter="blackwork" data-i18n="filter_blackwork">Blackwork</button>
+                <button class="filter-btn" data-filter="oldschool" data-i18n="filter_oldschool">Oldschool</button>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="realism" data-title="Portret wilka" data-artist="Adam Muś" data-style="Realizm">
+                    <img src="images/Realizm1.jpg" alt="Realizm #1" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus" aria-hidden="true"></i>
+                        <h3>Portret wilka</h3>
+                        <span>Realizm</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="graphic" data-title="Geometryczna kompozycja" data-artist="Klaudia Naglik" data-style="Grafika">
+                    <img src="images/Grafika1.jpg" alt="Grafika #1" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus" aria-hidden="true"></i>
+                        <h3>Geometryczna kompozycja</h3>
+                        <span>Grafika</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="minimal" data-title="Cienka linia florystyczna" data-artist="Kordian Betcher" data-style="Minimalizm">
+                    <img src="images/Minimalizm1.png" alt="Minimalizm #1" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus" aria-hidden="true"></i>
+                        <h3>Cienka linia florystyczna</h3>
+                        <span>Minimalizm</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="blackwork" data-title="Mroczna ornamentyka" data-artist="Klaudia Naglik" data-style="Blackwork">
+                    <img src="images/Blackwork.jpg" alt="Blackwork #1" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus" aria-hidden="true"></i>
+                        <h3>Mroczna ornamentyka</h3>
+                        <span>Blackwork</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="oldschool" data-title="Klasyczny motyw żeglarski" data-artist="Adam Muś" data-style="Oldschool">
+                    <img src="images/Oldschool.jpg" alt="Oldschool #1" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus" aria-hidden="true"></i>
+                        <h3>Klasyczny motyw żeglarski</h3>
+                        <span>Oldschool</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="realism" data-title="Rzeźba antyczna" data-artist="Adam Muś" data-style="Realizm">
+                    <img src="images/Realizm2.jpg" alt="Realizm #2" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus" aria-hidden="true"></i>
+                        <h3>Rzeźba antyczna</h3>
+                        <span>Realizm</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="graphic" data-title="Czarno-biała abstrakcja" data-artist="Klaudia Naglik" data-style="Grafika">
+                    <img src="images/Grafika2.jpg" alt="Grafika #2" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus" aria-hidden="true"></i>
+                        <h3>Czarno-biała abstrakcja</h3>
+                        <span>Grafika</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="minimal" data-title="Subtelny napis & kontur" data-artist="Kordian Betcher" data-style="Minimalizm">
+                    <img src="images/Minimalizm2.png" alt="Minimalizm #2" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus" aria-hidden="true"></i>
+                        <h3>Subtelny napis & kontur</h3>
+                        <span>Minimalizm</span>
+                    </div>
+                </div>
+                <!-- Dodane nowe wyraziste prace -->
+                <div class="gallery-item" data-category="blackwork" data-title="Kruk & Runiczny Sztylet" data-artist="Klaudia Naglik" data-style="Blackwork">
+                    <img src="images/Blackwork2.jpg" alt="Blackwork #2" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus" aria-hidden="true"></i>
+                        <h3>Kruk & Runiczny Sztylet</h3>
+                        <span>Blackwork</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="oldschool" data-title="Statek & Klasyczna Róża" data-artist="Adam Muś" data-style="Oldschool">
+                    <img src="images/Oldschool2.jpg" alt="Oldschool #2" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus" aria-hidden="true"></i>
+                        <h3>Statek & Klasyczna Róża</h3>
+                        <span>Oldschool</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== MISTRZOWIE ========== -->
+    <section class="artists" id="artists">
+        <div class="container">
+            <div class="section-number">05</div>
+            <h2 class="section-title"><span data-i18n="artists_title_1">NASI</span> <span class="accent" data-i18n="artists_title_2">MISTRZOWIE</span></h2>
+            <div class="artists-grid">
+                <div class="artist-card">
+                    <div class="artist-photo">
+                        <img src="images/Adam Muś.jpg" alt="Adam Muś">
+                    </div>
+                    <h3>Adam Muś</h3>
+                    <p class="artist-specialty" data-i18n="artist_adam_spec">Realizm / Portrety</p>
+                    <p class="artist-exp"><span data-i18n="artist_exp_prefix">Doświadczenie:</span> 12 <span data-i18n="years_text">lat</span></p>
+                    <div class="artist-social">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="VK"><i class="fab fa-vk"></i></a>
+                        <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <div class="artist-photo">
+                        <img src="images/Kordian Betcher.jpg" alt="Kordian Betcher">
+                    </div>
+                    <h3>Kordian Betcher</h3>
+                    <p class="artist-specialty" data-i18n="artist_kordian_spec">Minimalizm / Akwarela</p>
+                    <p class="artist-exp"><span data-i18n="artist_exp_prefix">Doświadczenie:</span> 8 <span data-i18n="years_text">lat</span></p>
+                    <div class="artist-social">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="VK"><i class="fab fa-vk"></i></a>
+                        <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <div class="artist-photo">
+                        <img src="images/Klaudia Naglik.jpg" alt="Klaudia Naglik">
+                    </div>
+                    <h3>Klaudia Naglik</h3>
+                    <p class="artist-specialty" data-i18n="artist_klaudia_spec">Blackwork / Grafika</p>
+                    <p class="artist-exp"><span data-i18n="artist_exp_prefix">Doświadczenie:</span> 10 <span data-i18n="years_text">lat</span></p>
+                    <div class="artist-social">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="VK"><i class="fab fa-vk"></i></a>
+                        <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== DLACZEGO MY ========== -->
+    <section class="why-us" id="why-us">
+        <div class="container">
+            <div class="section-number">06</div>
+            <h2 class="section-title"><span data-i18n="why_title_1">DLACZEGO</span> <span class="accent" data-i18n="why_title_2">MY?</span></h2>
+            <div class="why-grid">
+                <div class="why-item">
+                    <div class="why-icon"><i class="fas fa-user-check"></i></div>
+                    <h3 data-i18n="why_1_title">Indywidualne podejście</h3>
+                    <p data-i18n="why_1_desc">Dla każdego klienta i jego pomysłu – żadnych szablonów, tylko unikalne rozwiązania.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon"><i class="fas fa-shield-virus"></i></div>
+                    <h3 data-i18n="why_2_title">Sterylność i bezpieczeństwo</h3>
+                    <p data-i18n="why_2_desc">Materiały jednorazowego użytku, certyfikowane farby, autoklaw medyczny do sterylizacji.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon"><i class="fas fa-award"></i></div>
+                    <h3 data-i18n="why_3_title">Doświadczeni artyści</h3>
+                    <p data-i18n="why_3_desc">Międzynarodowe certyfikaty, udział w festiwalach i konwencjach tatuażu.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon"><i class="fas fa-dollar-sign"></i></div>
+                    <h3 data-i18n="why_4_title">Uczciwe ceny</h3>
+                    <p data-i18n="why_4_desc">Bez ukrytych opłat — znasz ostateczną cenę jeszcze przed rozpoczęciem sesji.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PRZEBIEG PRACY ========== -->
+    <section class="process" id="process">
+        <div class="container">
+            <h2 class="section-title"><span data-i18n="process_title_1">JAK</span> <span class="accent" data-i18n="process_title_2">PRACUJEMY</span></h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <h3 data-i18n="step_1_title">Konsultacja</h3>
+                    <p data-i18n="step_1_desc">Omówimy Państwa pomysł, styl, rozmiar i rozmieszczenie na ciele</p>
+                </div>
+                <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <h3 data-i18n="step_2_title">Szkic</h3>
+                    <p data-i18n="step_2_desc">Mistrz tworzy wyjątkowy projekt specjalnie dla Ciebie</p>
+                </div>
+                <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <h3 data-i18n="step_3_title">Sesja</h3>
+                    <p data-i18n="step_3_desc">Pracujemy w komfortowej atmosferze, przestrzegając wszystkich standardów</p>
+                </div>
+                <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="step">
+                    <div class="step-number">04</div>
+                    <h3 data-i18n="step_4_title">Pielęgnacja</h3>
+                    <p data-i18n="step_4_desc">Przekazujemy instrukcje dotyczące pielęgnacji i zapewniamy wsparcie aż do wygojenia</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== OPINIE KLIENTÓW ========== -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-number">07</div>
+            <h2 class="section-title"><span data-i18n="reviews_title_1">OPINIE</span> <span class="accent" data-i18n="reviews_title_2">KLIENTÓW</span></h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text" data-i18n="review_1_text">
+                        „Robiłem rękaw w stylu realizmu u Adama. Kunszt i dbałość o każdy mikroskopijny detal dosłownie zapierają dech w piersiach! W studiu panuje świetny klimat i pełna higiena.”
+                    </p>
+                    <div class="review-author">
+                        <div class="author-avatar"><i class="fas fa-user-ninja" aria-hidden="true"></i></div>
+                        <div>
+                            <h3>Mikołaj Zieliński</h3>
+                            <span data-i18n="review_1_meta">Tatuaż Realizm • Mistrz: Adam Muś</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text" data-i18n="review_2_text">
+                        „Klaudia stworzyła dla mnie absolutnie hipnotyzujący projekt w stylu blackwork! Linie są równe jak cięte laserem, a cały proces gojenia minął bez żadnych problemów.”
+                    </p>
+                    <div class="review-author">
+                        <div class="author-avatar"><i class="fas fa-user-astronaut" aria-hidden="true"></i></div>
+                        <div>
+                            <h3>Karolina Wójcik</h3>
+                            <span data-i18n="review_2_meta">Grafika / Blackwork • Mistrzyni: Klaudia Naglik</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text" data-i18n="review_3_text">
+                        „Mój pierwszy tatuaż i strasznie się bałam. Kordian rozwiał wszystkie obawy, dobrał idealny minimalistyczny wzór i zrobił to praktycznie bezboleśnie. Wrócę na 100%!”
+                    </p>
+                    <div class="review-author">
+                        <div class="author-avatar"><i class="fas fa-feather-alt" aria-hidden="true"></i></div>
+                        <div>
+                            <h3>Julia Lewandowska</h3>
+                            <span data-i18n="review_3_meta">Minimalizm • Mistrz: Kordian Betcher</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FAQ ========== -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-number">08</div>
+            <h2 class="section-title"><span data-i18n="faq_title_1">CZĘSTO ZADAWANE</span> <span class="accent" data-i18n="faq_title_2">PYTANIA</span></h2>
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <button class="faq-question" type="button" aria-expanded="false" aria-controls="faqAnswer1">
+                        <span data-i18n="faq_q1">Czy zrobienie tatuażu bardzo boli?</span>
+                        <i class="fas fa-chevron-down faq-icon" aria-hidden="true"></i>
+                    </button>
+                    <div class="faq-answer" id="faqAnswer1">
+                        <p data-i18n="faq_a1">
+                            Odczuwanie bólu jest indywidualne i zależy od miejsca na ciele. Miejsca nad kością (żebra, łokcie, kostki) są bardziej czułe, natomiast ramiona, uda czy łydki są zazwyczaj bardzo dobrze znoszone. Nasi mistrzowie dbają o częste przerwy i komfortową atmosferę.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" type="button" aria-expanded="false" aria-controls="faqAnswer2">
+                        <span data-i18n="faq_q2">Jak przygotować się do sesji tatuażu?</span>
+                        <i class="fas fa-chevron-down faq-icon" aria-hidden="true"></i>
+                    </button>
+                    <div class="faq-answer" id="faqAnswer2">
+                        <p data-i18n="faq_a2">
+                            Dobrze się wyśpij, zjedz sycący posiłek 1–2 godziny przed sesją oraz pij dużo wody. Przez 24 godziny przed wizytą unikaj alkoholu i leków rozrzedzających krew (np. aspiryny). Załóż wygodne ubranie, które nie będzie uciskać tatuowanego miejsca.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" type="button" aria-expanded="false" aria-controls="faqAnswer3">
+                        <span data-i18n="faq_q3">Jak dbacie o bezpieczeństwo i sterylność?</span>
+                        <i class="fas fa-chevron-down faq-icon" aria-hidden="true"></i>
+                    </button>
+                    <div class="faq-answer" id="faqAnswer3">
+                        <p data-i18n="faq_a3">
+                            Używamy wyłącznie jednorazowych, sterylnie pakowanych igieł i modułów kartridżowych otwieranych przy kliencie. Pozostałe narzędzia przechodzą autoklawowanie w certyfikowanym sprzęcie medycznym. Korzystamy z najwyższej jakości atestowanych pigmentów z UE i USA.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" type="button" aria-expanded="false" aria-controls="faqAnswer4">
+                        <span data-i18n="faq_q4">Ile kosztuje tatuaż i od czego zależy cena?</span>
+                        <i class="fas fa-chevron-down faq-icon" aria-hidden="true"></i>
+                    </button>
+                    <div class="faq-answer" id="faqAnswer4">
+                        <p data-i18n="faq_a4">
+                            Cena zależy od rozmiaru, złożoności motywu, wybranego stylu oraz czasu trwania sesji. Dokładny koszt ustalamy na bezpłatnej konsultacji jeszcze przed przystąpieniem do pracy — nie ma u nas żadnych ukrytych dopłat.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" type="button" aria-expanded="false" aria-controls="faqAnswer5">
+                        <span data-i18n="faq_q5">Jak długo trwa gojenie tatuażu?</span>
+                        <i class="fas fa-chevron-down faq-icon" aria-hidden="true"></i>
+                    </button>
+                    <div class="faq-answer" id="faqAnswer5">
+                        <p data-i18n="faq_a5">
+                            Podstawowe gojenie naskórka trwa około 10–14 dni, a pełna regeneracja głębszych warstw skóry trwa około miesiąca. Po sesji otrzymasz od nas specjalną folię ochronną i dokładną instrukcję pielęgnacyjną.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== KONTAKT ========== -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-number">09</div>
+            <h2 class="section-title"><span class="accent" data-i18n="contact_title">KONTAKT</span></h2>
+            <div class="contact-grid">
+                <!-- Formularz zgłoszeniowy -->
+                <div class="contact-form-wrapper">
+                    <h3 data-i18n="form_title">Umówić się na sesję</h3>
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Twoje imię" data-i18n-ph="form_name" required>
+                            <label for="name"><i class="fas fa-user" aria-hidden="true"></i><span class="sr-only">Imię / Name</span></label>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="Telefon" data-i18n-ph="form_phone" required>
+                            <label for="phone"><i class="fas fa-phone" aria-hidden="true"></i><span class="sr-only">Telefon / Phone</span></label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Email" data-i18n-ph="form_email">
+                            <label for="email"><i class="fas fa-envelope" aria-hidden="true"></i><span class="sr-only">Email</span></label>
+                        </div>
+                        <div class="form-group">
+                            <label for="service" class="sr-only">Usługa / Service</label>
+                            <select id="service" required>
+                                <option value="" disabled selected data-i18n="form_opt_choose">Wybierz usługę</option>
+                                <option value="tattoo" data-i18n="form_opt_tattoo">Tatuaż</option>
+                                <option value="sketch" data-i18n="form_opt_sketch">Opracowanie szkicu</option>
+                                <option value="coverup" data-i18n="form_opt_coverup">Cover-Up</option>
+                                <option value="piercing" data-i18n="form_opt_piercing">Piercing</option>
+                                <option value="correction" data-i18n="form_opt_correction">Korekta</option>
+                                <option value="consult" data-i18n="form_opt_consult">Konsultacja</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="sr-only">Wiadomość / Project description</label>
+                            <textarea id="message" placeholder="Opisz swój pomysł..." data-i18n-ph="form_msg" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane" aria-hidden="true"></i> <span data-i18n="form_submit">Wyślij zgłoszenie</span>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Dane kontaktowe -->
+                <div class="contact-info">
+                    <h3 data-i18n="contact_data_title">Nasze dane</h3>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>INK SOUL Studio</strong><br>
+                            Wrocław, ul. Twórcza 10<br>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <a href="tel:+48486951248">+ 48 486-951-248</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <a href="mailto:info@inksoul.studio">info@inksoul.studio</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-globe"></i>
+                        <div>
+                            <a href="#">www.inksoul.pl</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong data-i18n="hours_title">Godziny otwarcia:</strong><br>
+                            <span data-i18n="hours_value">Pn-Sb: 11:00 – 22:00</span>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <h4 data-i18n="social_title">Jesteśmy w mediach:</h4>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-icon" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                            <a href="#" class="social-icon" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Karta -->
+                    <div class="map-placeholder">
+                        <iframe
+                            title="Lokalizacja INK SOUL"
+                            width="100%"
+                            height="300"
+                            loading="lazy"
+                            frameborder="0"
+                            scrolling="no"
+                            marginheight="0"
+                            marginwidth="0"
+                            src="https://www.google.com/maps?q=Marsza%C5%82ka+J%C3%B3zefa+Pi%C5%82sudskiego+56,+50-033+Wroc%C5%82aw,+Poland&output=embed"
+                            style="border-radius: 12px;">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-pen-nib"></i>
+                    <span>INK <strong>SOUL</strong></span>
+                </div>
+                <p>&copy; 2026 INK SOUL Studio. Projekt z grafiki - Vladyslav Holoven.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== MODAL LIGHTBOX ========== -->
+    <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle" aria-hidden="true">
+        <div class="lightbox-backdrop"></div>
+        <div class="lightbox-container">
+            <button class="lightbox-close" id="lightboxClose" aria-label="Zamknij podgląd">&times;</button>
+            <button class="lightbox-prev" id="lightboxPrev" aria-label="Poprzednie zdjęcie"><i class="fas fa-chevron-left"></i></button>
+            <button class="lightbox-next" id="lightboxNext" aria-label="Następne zdjęcie"><i class="fas fa-chevron-right"></i></button>
+            
+            <div class="lightbox-content">
+                <div class="lightbox-image-wrapper">
+                    <img src="" alt="" id="lightboxImg">
+                </div>
+                <div class="lightbox-details">
+                    <div class="lightbox-info-group">
+                        <h3 id="lightboxTitle"></h3>
+                        <div class="lightbox-meta">
+                            <span id="lightboxStyle" class="badge"></span>
+                            <span id="lightboxArtist"></span>
+                        </div>
+                    </div>
+                    <div class="lightbox-bottom-nav">
+                        <button class="lightbox-nav-btn lightbox-prev-btn" id="lightboxPrevBtn" aria-label="Poprzednie zdjęcie"><i class="fas fa-chevron-left"></i></button>
+                        <button class="lightbox-nav-btn lightbox-next-btn" id="lightboxNextBtn" aria-label="Następne zdjęcie"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Przycisk „Do góry” -->
+    <button class="back-to-top" id="backToTop" aria-label="Na górę">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
